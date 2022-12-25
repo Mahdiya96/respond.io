@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-25T21:34:51 IST" name="Default suite" finished-at="2022-12-25T21:35:02 IST" duration-ms="11125">
+    <groups>
+    </groups>
+    <test started-at="2022-12-25T21:34:51 IST" name="Default test" finished-at="2022-12-25T21:35:02 IST" duration-ms="11125">
+      <class name="TestScenarios">
+        <test-method signature="verifyEndPointForIncompleteHeaders()[pri:0, instance:TestScenarios@61386958]" started-at="2022-12-25T21:34:51 IST" name="verifyEndPointForIncompleteHeaders" description="Verify end point is failing for incomplete headers" finished-at="2022-12-25T21:34:54 IST" duration-ms="2847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEndPointForIncompleteHeaders -->
+        <test-method signature="verifyEndPointForIncompleteInputs()[pri:0, instance:TestScenarios@61386958]" started-at="2022-12-25T21:34:54 IST" name="verifyEndPointForIncompleteInputs" description="Verify end point is failing for incomplete inputs" finished-at="2022-12-25T21:34:55 IST" duration-ms="1286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEndPointForIncompleteInputs -->
+        <test-method signature="verifyEndPointForInvalidInputs()[pri:0, instance:TestScenarios@61386958]" started-at="2022-12-25T21:34:55 IST" name="verifyEndPointForInvalidInputs" description="Verify end point is failing for invalid inputs" finished-at="2022-12-25T21:34:57 IST" duration-ms="1268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEndPointForInvalidInputs -->
+        <test-method signature="verifyEndPointResponseTime()[pri:0, instance:TestScenarios@61386958]" started-at="2022-12-25T21:34:57 IST" name="verifyEndPointResponseTime" description="Verify end point response time" finished-at="2022-12-25T21:34:58 IST" duration-ms="1255" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Response time is above 1000ms expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Response time is above 1000ms expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertFalse(Assert.java:67)
+at TestScenarios.verifyEndPointResponseTime(TestScenarios.java:218)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEndPointResponseTime -->
+        <test-method signature="verifyResponseBody()[pri:0, instance:TestScenarios@61386958]" started-at="2022-12-25T21:34:58 IST" name="verifyResponseBody" description="Verify correct response body is returned for valid inputs" finished-at="2022-12-25T21:35:00 IST" duration-ms="1915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResponseBody -->
+        <test-method signature="verifyResponseHeaders()[pri:0, instance:TestScenarios@61386958]" started-at="2022-12-25T21:35:00 IST" name="verifyResponseHeaders" description="Verify correct response header is returned" finished-at="2022-12-25T21:35:01 IST" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResponseHeaders -->
+        <test-method signature="verifyResponseStatusCode()[pri:0, instance:TestScenarios@61386958]" started-at="2022-12-25T21:35:01 IST" name="verifyResponseStatusCode" description="Verify correct response status code is returned for valid inputs" finished-at="2022-12-25T21:35:02 IST" duration-ms="1246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResponseStatusCode -->
+      </class> <!-- TestScenarios -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
